@@ -3,6 +3,12 @@ public class Oficina {
     private String Direccion;
     private int Cpostal;
 
+    public Oficina(String ciudad, String direccion, int cpostal) {
+        Ciudad = ciudad;
+        Direccion = direccion;
+        Cpostal = cpostal;
+    }
+
     public String getCiudad() {
         return Ciudad;
     }
