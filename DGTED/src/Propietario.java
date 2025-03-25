@@ -10,4 +10,36 @@ public class Propietario {
         Apellidos = apellidos;
         Puntos = puntos;
     }
+
+    public String getDNI() {
+        return DNI;
+    }
+
+    public void setDNI(String DNI) {
+        this.DNI = DNI;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String nombre) {
+        Nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return Apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        Apellidos = apellidos;
+    }
+
+    public int getPuntos() {
+        return Puntos;
+    }
+
+    public void setPuntos(int puntos) {
+        Puntos = puntos;
+    }
 }
