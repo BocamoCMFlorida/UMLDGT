@@ -3,7 +3,7 @@ public class Vehiculo {
     private String Marca;
     private String Propietario;
     private Double KM;
-    private int FechaFabricacion;
+    private String FechaFabricacion;
 
     public Vehiculo(String matricula, String marca, String propietario, Double KM, int fechaFabricacion) {
         Matricula = matricula;
@@ -45,11 +45,12 @@ public class Vehiculo {
         this.KM = KM;
     }
 
-    public int getFechaFabricacion() {
+    public String getFechaFabricacion() {
         return FechaFabricacion;
     }
 
-    public void setFechaFabricacion(int fechaFabricacion) {
+    public void setFechaFabricacion(String fechaFabricacion) {
         FechaFabricacion = fechaFabricacion;
     }
 }
+
