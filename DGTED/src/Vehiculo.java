@@ -5,7 +5,7 @@ public class Vehiculo {
     private Double KM;
     private String FechaFabricacion;
 
-    public Vehiculo(String matricula, String marca, String propietario, Double KM, int fechaFabricacion) {
+    public Vehiculo(String matricula, String marca, String propietario, Double KM, String fechaFabricacion) {
         Matricula = matricula;
         Marca = marca;
         Propietario = propietario;
