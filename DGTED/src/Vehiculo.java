@@ -1,4 +1,4 @@
-public abstract class  Vehiculo {
+public  class  Vehiculo {
     private String Matricula;
     private String Marca;
     private String Propietario;
