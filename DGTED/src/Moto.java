@@ -10,6 +10,7 @@ class Moto extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Moto{potencia=" + potencia + ", EsdeAgua=" + EsdeAgua + "}";
+        return "Moto{potencia=" + potencia +
+                ", EsdeAgua=" + (EsdeAgua ? "Sí" : "No") + "}";
     }
 }
