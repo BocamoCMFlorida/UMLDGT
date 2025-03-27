@@ -7,4 +7,9 @@ class Moto extends Vehiculo {
         EsdeAgua = esdeAgua;
         this.potencia = potencia;
     }
+
+    @Override
+    public String toString() {
+        return "Moto{potencia=" + potencia + ", EsdeAgua=" + EsdeAgua + "}";
+    }
 }
