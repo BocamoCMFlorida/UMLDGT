@@ -32,4 +32,13 @@ public class Oficina {
     public void setCpostal(int cpostal) {
         Cpostal = cpostal;
     }
+
+    @Override
+    public String toString() {
+        return "Oficina{" +
+                "Ciudad='" + Ciudad + '\'' +
+                ", Direccion='" + Direccion + '\'' +
+                ", Cpostal=" + Cpostal +
+                '}';
+    }
 }
