@@ -12,6 +12,8 @@ class Coche extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Coche{asientos=" + asientos + ", airbags=" + airbags + ", tieneSillaBebe=" + tieneSillaBebe + "}";
+        return "Coche{asientos=" + asientos +
+                ", airbags=" + (airbags ? "Sí" : "No") +
+                ", tieneSillaBebe=" + (tieneSillaBebe ? "Sí" : "No") + "}";
     }
 }
