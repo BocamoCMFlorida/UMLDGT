@@ -15,15 +15,6 @@ public class SistemaGestion {
         return null;
     }
 
-    public Propietario buscarPropietarioApellido(String apellido) {
-        for (Propietario p : propietarios) {
-            if (p.getApellidos().equalsIgnoreCase(apellido)) {
-                return p;
-            }
-        }
-        return null;
-    }
-
     public Vehiculo buscarVehiculoMatricula(String matricula) {
         for (Vehiculo v : vehiculos) {
             if (v.getMatricula().equals(matricula)) {
@@ -41,8 +32,32 @@ public class SistemaGestion {
         vehiculos.add(vehiculo);
     }
 
+    public void mostrarTodosLosDatos() {
+        System.out.println("\nLista de Propietarios:");
+        for (Propietario p : propietarios) {
+            System.out.println(p);
+        }
+
+        System.out.println("\nLista de Vehículos:");
+        for (Vehiculo v : vehiculos) {
+            System.out.println(v);
+        }
+    }
+
     public static void main(String[] args) {
         SistemaGestion sistema = new SistemaGestion();
+
+        // Agregar objetos de muestra
+        Propietario p1 = new Propietario("12345678A", "Carlos", "Fernandez", 12);
+        Propietario p2 = new Propietario("87654321B", "Laura", "Gomez", 10);
+        sistema.altaPropietario(p1);
+        sistema.altaPropietario(p2);
+
+        Vehiculo v1 = new Coche("ABC123", "Toyota", p1.getDNI(), 50000.0, "2018", 5, true, false);
+        Vehiculo v2 = new Moto("XYZ789", "Honda", p2.getDNI(), 15000.0, "2020", false, 150);
+        sistema.altaVehiculo(v1);
+        sistema.altaVehiculo(v2);
+
         Scanner scanner = new Scanner(System.in);
         int opcion;
 
@@ -51,8 +66,8 @@ public class SistemaGestion {
             System.out.println("1. Alta Propietario");
             System.out.println("2. Alta Vehículo");
             System.out.println("3. Buscar Propietario por DNI");
-            System.out.println("4. Buscar Propietario por Apellido");
-            System.out.println("5. Buscar Vehículo por Matrícula");
+            System.out.println("4. Buscar Vehículo por Matrícula");
+            System.out.println("5. Mostrar todos los datos");
             System.out.println("6. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
@@ -98,14 +113,12 @@ public class SistemaGestion {
                     System.out.println(pDni != null ? "Propietario encontrado: " + pDni.getNombre() : "No encontrado.");
                     break;
                 case 4:
-                    System.out.print("Ingrese Apellido del propietario: ");
-                    Propietario pApellido = sistema.buscarPropietarioApellido(scanner.nextLine());
-                    System.out.println(pApellido != null ? "Propietario encontrado: " + pApellido.getNombre() : "No encontrado.");
-                    break;
-                case 5:
                     System.out.print("Ingrese Matrícula del vehículo: ");
                     Vehiculo vehiculo = sistema.buscarVehiculoMatricula(scanner.nextLine());
                     System.out.println(vehiculo != null ? "Vehículo encontrado: " + vehiculo.getMarca() : "No encontrado.");
+                    break;
+                case 5:
+                    sistema.mostrarTodosLosDatos();
                     break;
                 case 6:
                     System.out.println("Saliendo del sistema...");
