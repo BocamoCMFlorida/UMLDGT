@@ -10,5 +10,8 @@ class Coche extends Vehiculo {
         this.tieneSillaBebe = tieneSillaBebe;
     }
 
+    @Override
+    public String toString() {
+        return "Coche{asientos=" + asientos + ", airbags=" + airbags + ", tieneSillaBebe=" + tieneSillaBebe + "}";
+    }
 }
-
