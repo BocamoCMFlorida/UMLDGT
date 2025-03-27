@@ -42,4 +42,9 @@ public class Propietario {
     public void setPuntos(int puntos) {
         Puntos = puntos;
     }
+
+    @Override
+    public String toString() {
+        return "Propietario{DNI='" + DNI + "', Nombre='" + Nombre + "', Apellidos='" + Apellidos + "', Puntos=" + Puntos + "}";
+    }
 }
