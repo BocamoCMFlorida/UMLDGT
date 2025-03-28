@@ -32,11 +32,11 @@ Para ejecutar este proyecto necesitarás:
 2. **Compila y ejecuta el proyecto:**
    - En **Windows**:
      ```sh
-     ./compilar_windows.bat
+     ./compilar.bat
      ```
    - En **Linux**:
      ```sh
-     ./compilar_linux.sh
+     ./compilar.sh
      ```
 
 ---
