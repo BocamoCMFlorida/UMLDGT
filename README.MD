@@ -1,6 +1,6 @@
 # 🚗 **Sistema de Gestión de Vehículos** - **Versión 1.0** 🚗
 
-Este es un **sistema de gestión** de **vehículos** y **propietarios**, que permite registrar y gestionar información relacionada con los vehículos y sus propietarios. El sistema está construido en **Java** y utiliza una base de datos **MySQL** para almacenar los datos de manera persistente.
+Este es un **sistema de gestión** de **vehículos** y **propietarios**, que permite registrar y gestionar información relacionada con los vehículos y sus propietarios. El sistema está construido en **Java**.
 
 ## **Características** ✨
 
@@ -17,8 +17,30 @@ Este es un **sistema de gestión** de **vehículos** y **propietarios**, que per
 Para ejecutar este proyecto necesitarás:
 
 - **Java 8** o superior.
-- **MySQL** (o algún servicio de base de datos compatible).
 - **Maven** (opcional, para gestión de dependencias).
-- **JDBC Driver** de MySQL para conectar Java con la base de datos.
 
 ---
+
+## **Instalación y Configuración** 🚀
+
+1. **Clona este repositorio:**
+   ```sh
+   git clone https://github.com/usuario/sistema-gestion-vehiculos.git
+   cd sistema-gestion-vehiculos
+   ```
+
+2. **Compila y ejecuta el proyecto:**
+   - En **Windows**:
+     ```sh
+     ./compilar_windows.bat
+     ```
+   - En **Linux**:
+     ```sh
+     ./compilar_linux.sh
+     ```
+
+---
+
+## **Licencia** 📜
+
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
