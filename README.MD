@@ -38,9 +38,12 @@ Para ejecutar este proyecto necesitarás:
      ```sh
      ./compilar.sh
      ```
+3. **Ejecuta el archivo JAR:**
+   ```sh
+   java -jar target/sistema-gestion-vehiculos-1.0.jar
+   ```
+
 
 ---
 
-## **Licencia** 📜
 
-Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
